@@ -1,4 +1,4 @@
-# Example 4k intro for 64-bit Linux
+# 4k intro skeleton for 64-bit Arch Linux
 
 ![shrinky-intro](shrinky-intro.gif)
 
