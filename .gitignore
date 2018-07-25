@@ -1,0 +1,10 @@
+main
+main.bin
+shrinky.h
+*.unprocessed
+*.stripped
+*.o
+*.preprocessed
+*.S
+*.ld
+*.glsl.hpp
