@@ -1,4 +1,6 @@
-# 4k intro skeleton for 64-bit Arch Linux
+# Skeleton for a 4k (demoscene) intro for 64-bit Linux
+
+For developing on Arch Linux. The executables should work on any modern 64-bit x86 Linux distro.
 
 ![shrinky-intro](shrinky-intro.gif)
 
