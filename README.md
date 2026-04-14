@@ -10,7 +10,7 @@ The binary is 1055 bytes when building it here. It uses a small shellscript head
 
 ### Requirements
 
-This project can be compiled with [shrinky](https://github.com/xyproto/shrinky) (available in [AUR](https://aur.archlinux.org/packages/shrinky/)).
+This project can be compiled with [shrinky](https://github.com/xyproto/shrinky).
 
     shrinky main.cpp
 
