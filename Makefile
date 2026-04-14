@@ -8,5 +8,8 @@ main: main.cpp
 build-clean:
 	@rm -f main.bin shrinky.h *.unprocessed *.stripped *.o *.preprocessed *.S *.ld *.glsl.hpp
 
+run: main
+	./main
+
 clean:
 	rm -f main
