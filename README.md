@@ -1,4 +1,4 @@
-# Skeleton for a 4k (demoscene) intro for 64-bit Linux
+# Template for a "4k demoscene intro" for 64-bit Linux
 
 For developing on Arch Linux. The executables should work on any modern 64-bit x86 Linux distro. Also tested on Fedora.
 
