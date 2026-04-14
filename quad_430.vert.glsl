@@ -4,11 +4,6 @@ in vec2 vertex;
 
 out vec2 position;
 
-out gl_PerVertex
-{
-  vec4 gl_Position;
-};
-
 void main()
 {
   position = vertex * (0.5 * 2.0);
