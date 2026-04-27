@@ -1,9 +1,9 @@
 /// \file
 /// Very small intro stub.
 
-//######################################
-// Include #############################
-//######################################
+// ######################################
+//  Include #############################
+// ######################################
 
 #include "shrinky.h"
 
@@ -21,9 +21,9 @@
 namespace po = boost::program_options;
 #endif
 
-//######################################
-// Define ##############################
-//######################################
+// ######################################
+//  Define ##############################
+// ######################################
 
 #if !defined(DISPLAY_MODE)
 /// Screen mode.
@@ -96,9 +96,9 @@ typedef uint8_t sample_t;
 #define STARTING_UP_Z 0.0f
 /// \endcond
 
-//######################################
-// Global data #########################
-//######################################
+// ######################################
+//  Global data #########################
+// ######################################
 
 /// Audio buffer for output.
 static uint8_t g_audio_buffer[INTRO_LENGTH * 9 / 8];
@@ -135,9 +135,9 @@ static const char* usage = ""
 
 #endif
 
-//######################################
-// Global functions ####################
-//######################################
+// ######################################
+//  Global functions ####################
+// ######################################
 
 /// Global SDL window storage.
 SDL_Window* g_sdl_window;
@@ -171,9 +171,9 @@ static void teardown()
     shrinky_SDL_Quit();
 }
 
-//######################################
-// Random ##############################
-//######################################
+// ######################################
+//  Random ##############################
+// ######################################
 
 #if 0
 
@@ -188,9 +188,9 @@ static float frand(float op)
 
 #endif
 
-//######################################
-// Music ###############################
-//######################################
+// ######################################
+//  Music ###############################
+// ######################################
 
 /// \brief Update audio stream.
 ///
@@ -209,9 +209,9 @@ static void audio_callback(void* userdata, SDL_AudioStream* stream, int addition
 /// SDL audio specification struct.
 static SDL_AudioSpec audio_spec = { AUDIO_SAMPLE_TYPE_SDL, AUDIO_CHANNELS, AUDIO_SAMPLERATE };
 
-//######################################
-// Shaders #############################
-//######################################
+// ######################################
+//  Shaders #############################
+// ######################################
 
 #if defined(SHRINKY_GLESV2)
 
@@ -434,9 +434,9 @@ static GLuint pipeline_create()
 
 #endif
 
-//######################################
-// Uniform data ########################
-//######################################
+// ######################################
+//  Uniform data ########################
+// ######################################
 
 /// \brief Uniforms.
 ///
@@ -512,9 +512,9 @@ static void draw(int ticks)
 #endif
 }
 
-//######################################
-// Utility #############################
-//######################################
+// ######################################
+//  Utility #############################
+// ######################################
 
 #if defined(USE_LD)
 
@@ -615,9 +615,9 @@ void update_window_position()
 
 #endif
 
-//######################################
-// intro / _start ######################
-//######################################
+// ######################################
+//  intro / _start ######################
+// ######################################
 
 /// \cond
 #if defined(SHRINKY_VIDEOCORE)
@@ -667,8 +667,7 @@ void _start()
 #else
     shrinky_SDL_GL_CreateContext(g_sdl_window);
 #endif
-    if(!g_flag_developer)
-    {
+    if (!g_flag_developer) {
         shrinky_SDL_HideCursor();
     }
 
@@ -777,11 +776,11 @@ void _start()
     }
 
     if (!g_flag_developer) {
-        SDL_AudioStream *audio_stream = SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &audio_spec, audio_callback, NULL);
+        SDL_AudioStream* audio_stream = SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &audio_spec, audio_callback, NULL);
         SDL_ResumeAudioStreamDevice(audio_stream);
     }
 #else
-    SDL_AudioStream *audio_stream = shrinky_SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &audio_spec, audio_callback, NULL);
+    SDL_AudioStream* audio_stream = shrinky_SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &audio_spec, audio_callback, NULL);
     shrinky_SDL_ResumeAudioStreamDevice(audio_stream);
 #endif
 
@@ -1037,9 +1036,9 @@ void _start()
 #endif
 }
 
-//######################################
-// Main ################################
-//######################################
+// ######################################
+//  Main ################################
+// ######################################
 
 #if defined(USE_LD)
 /// Main function.
@@ -1102,6 +1101,6 @@ int SHRINKY_MAIN(int argc, char** argv)
 }
 #endif
 
-//######################################
-// End #################################
-//######################################
+// ######################################
+//  End #################################
+// ######################################
