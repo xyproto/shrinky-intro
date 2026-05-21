@@ -737,8 +737,7 @@ void _start()
         // viznut.
         for (ii = 0; (INTRO_LENGTH / sizeof(sample_t) > ii); ++ii) {
             g_audio_buffer[ii]
-                = static_cast<uint8_t>(static_cast<int>(ii / 70000000 * ii * ii + ii) % 127
-                    | ii >> 4 | ii >> 5 | (ii % 127 + (ii >> 17)) | ii);
+                = static_cast<uint8_t>(((ii * 9 & ii >> 4) + (ii * 5 & ii >> 7) + (ii * 3 & ii >> 10)) / 2);
         }
     }
 
