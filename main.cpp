@@ -667,9 +667,7 @@ void _start()
 #else
     shrinky_SDL_GL_CreateContext(g_sdl_window);
 #endif
-    if (!g_flag_developer) {
-        shrinky_SDL_HideCursor();
-    }
+    shrinky_SDL_HideCursor();
 
 #if defined(USE_LD)
 #if !defined(SHRINKY_GLESV2)
