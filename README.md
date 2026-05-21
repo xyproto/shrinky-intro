@@ -6,7 +6,7 @@ For developing on Arch Linux. The executables should work on any modern 64-bit x
 
 This is a 4k intro skeleton, originally from [dnload by Faemiyah](http://faemiyah.fi/demoscene/dnload). I can only take creds for making it work on Arch and Fedora.
 
-The binary is 1055 bytes when building it here. It uses a small shellscript header, where the ELF file is extracted to `/tmp` before being run. This is a permitted technique for most demoscene intro/4k compos. Extracting the code into memory and executing it there is a cooler technique, though.
+The binary is 1024 bytes when building it here. It uses a small shellscript header, where the ELF file is extracted to `/tmp` before being run. This is a permitted technique for most demoscene intro/4k compos. Extracting the code into memory and executing it there is a cooler technique, though.
 
 ### Requirements
 
